@@ -82,8 +82,9 @@ problems.
 modified before the course starts.**
 
 ### Boot Camp Day 1
-- 9:00am - 10:00am : Four ways of using Python, and when you'd want to use
-  each.
+- 9:00am - 10:00am : Intro: What is Python and why learn it?
+
+  + Origins & features of Python.
 
   + Why Python?  Some motivating examples.
  
@@ -95,7 +96,7 @@ modified before the course starts.**
 
   + The IPython notebook: sharing and collaborating on research
 
-- 10:00am - 11:00am : Built-in variables and types in Python:
+- 10:00am - 11:00am : Basic Training: Types, Variables, Calculations, and Flow
 
   + Example script: extracting data from a csv file
 
