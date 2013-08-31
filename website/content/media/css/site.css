@@ -595,15 +595,7 @@ pre {
     margin-top: 1px;
 }
 
-div#providers, div#syllabus {
-    width: 786px !important;
-}
-
-div#providers, div#schedule {
-    width: 786px !important;
-}
-
-div#providers, div#links {
+div#syllabus, div#schedule, div#links, div#setup {
     width: 786px !important;
 }
 
@@ -614,6 +606,10 @@ div#authors .image {
 div#authors ul {
     vertical-align: top;
     text-align: left;
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 div#authors li {
@@ -775,28 +771,9 @@ ul.modules-list-icons {
     background: url('../images/browser.png') no-repeat;
 }
 
-.columns div#customers h2 {
+.columns div#setup h2 {
     background-position: left center;
-    background: url('../images/customers.png') no-repeat;
-}
-
-.columns div#contact h2 {
-    background-position: left center;
-    background: url('../images/contact.png') no-repeat;
-}
-
-.columns div#services h2 {
-    background-position: left center;
-    background: url('../images/services.png') no-repeat;
-    margin-left: 40%;
-    text-align: left;
-}
-
-.columns div#providers h2 {
-    background-position: left center;
-    background: url('../images/providers.png') no-repeat;
-    margin-left: 40%;
-    text-align: left;
+    background: url('../images/tech.png') no-repeat;
 }
 
 .columns .box h3 {

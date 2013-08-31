@@ -1,0 +1,112 @@
+---
+extends: base.j2
+default_block: main
+title: Computer Setup
+description: Setting up your computer
+---
+
+<h1>Setting Up Your Computer</h1>
+<div class="columns">
+  <div class="box column" id="setup">
+    <h2>Hardware and Software</h2>
+    <p>It is important that each student has a laptop or other computer to
+      use during the course.  Though it is possible to use a Windows machine,
+      a Unix-based architecture (such as Mac OSX or Linux) will make your
+      life much easier, both for this course and in the long run.</p>
+    <p>There are two primary software requirements for this course:
+      <b>Python</b> and <b>Git</b>, which is a very useful version control
+      system.  Details on installation can be found below.</p>
+  </div>
+  <div class="box column" id="setup">
+    <h2>Installing Python</h2>
+    <p>The most important piece of software to have is Python.  In this
+      course we will be using <b>Python 2.7.5</b>, though any version
+      2.6.x-2.7.x should work.  Note that you <b>should not use Python 3.x</b>
+      at this point: 3.x has slightly different syntax, and will not work for
+      this course.</p>
+    <h3>Packages</h3>
+    <p>In addition to the Python interpreter, a number of scientific packages
+      will be required:</p>
+    <ul>
+      <li><a href="http://www.numpy.org">NumPy</a> version 1.5+:
+	efficient array operations</li>
+      <li><a href="http://www.scipy.org">SciPy</a> version 0.11+:
+	scientific computing tools</li>
+      <li><a href="http://www.matplotlib.org">matplotlib</a> version 1.0+:
+	plotting and visualization</li>
+      <li><a href="http://ipython.org">IPython</a> version 1.0+:
+	interactive computing</li>
+      <li><a href="http://scikit-learn.org">Scikit-learn</a> version 0.12+:
+	machine learning</li>
+      <li><a href="http://nose.readthedocs.org/">Nose</a>: unit testing</li>
+    </ul>
+    <h3>Installation</h3>
+    <p>For installation from-scratch, I highly recommend the
+      <a href="https://store.continuum.io/cshop/anaconda/">Anaconda Installer</a>, a free product offered by ContinuumIO.  It gives you a fast local Python
+      installation with up-to-date packages.<p>
+      <ol>
+	<li>Download and install Anaconda on your system, by going to the
+	  above link, downloading the appropriate package, and then typing
+	  <pre>[~]$ bash Anaconda-1.x.x-Linux-x86.sh</pre>
+	  (substitude the package you downloaded above).
+	</li>
+	<li><b>Open a new terminal window</b>, and make sure your $PATH
+	  variable points to the Anaconda installation. You can do this by
+	  typing <pre>[~]$ which python</pre>
+	  The result should show the path to the newly-installed anaconda
+	  folder.  If not, you must modify your $PATH variable to point to
+	  the anaconda directory.
+	<li>Update your Anaconda distribution by typing
+	  <pre>[~]$ conda update conda</pre>
+	  Conda is the package management system that comes with anaconda.
+	</li>
+	<li>Update your IPython installation to version 1.0 using
+	  <pre>[~]$ conda update ipython</pre>
+	</li>
+	<li>Check whether your IPython notebook is working correctly: type
+	  <pre>[~] ipython notebook</pre>
+	  and a browser window should open to the notebook dashboard.
+      </ol>
+    <p>Even if you have an existing Python installation, I'd still recommend
+      installing Anaconda for this course.  It will make your life a lot
+      easier.</p>
+  </div>
+  <div class="box column" id="setup">
+    <h2>Installing Git</h2>
+    <p><a href="http://git-scm.com/">Git</a> can be installed rather easily
+      on OSX or linux.  Detailed instructions can be found
+      <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">
+	here</a></p>
+      <h3>Linux</h3>
+      <p>If you are on linux, you can use the package management system, via
+      <pre>[~]$ sudo apt-get install git</pre>
+      or
+      <pre>[~]$ yum install git-core</pre>
+      </p>
+
+      <h3>Mac OSX</h3>
+      <p>On Mac OSX, you can either use the Mac installer at
+      <pre>http://code.google.com/p/git-osx-installer</pre>
+      or if you use Macports, type
+      <pre>[~]$ sudo port install git-core</pre>
+      </p>
+
+      <h3>Windows</h3>
+      <p>Git can be installed on windows using the tools at
+	<a href="http://msysgit.github.com/">http://msysgit.github.com/</a>.
+	Make sure to get the command-line interface as well as the GUI
+	interface.</p>
+  </div>
+  <div class="box column" id="setup">
+    <h2>Downloading the Course Material</h2>
+    <p>When you're finished installing Git, you can download all the course
+      material (including the HTML source of this web page) by typing
+      <pre>[~]$ git clone git@github.com:jakevdp/2013_fall_ASTR599.git</pre>
+      This will create a new folder and download all the course material.
+      If you ever would like to update the files in this folder, simply
+      type
+      <pre>[~]$ cd /path/to/2013_fall_ASTR599<br>[~]$ git pull</pre>
+      We will introduce the Git workflow more completely during the 
+      bootcamp.
+  </div>
+</div>

@@ -39,6 +39,13 @@ context:
                 url: schedule.html
 
             -
+                name: Computer Setup
+                description: Setting up your computer
+                css_class: installations
+                type: page
+                url: installations.html
+
+            -
                 name: Links/Downloads
                 description: Links and Downloads
                 css_class: downloads
