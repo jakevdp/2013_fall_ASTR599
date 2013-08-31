@@ -202,7 +202,7 @@ footer {
     color: #999;
     font-size: 32px;
     line-height: 42px;
-    margin-bottom: 26px;
+    margin-bottom: 36px;
     margin-top: -32px;
     text-align: center;
     margin-left: auto;
@@ -595,7 +595,7 @@ pre {
     margin-top: 1px;
 }
 
-div#syllabus, div#schedule, div#links, div#setup {
+div#syllabus, div#longtext, div#schedule, div#links, div#setup {
     width: 786px !important;
 }
 
@@ -764,6 +764,18 @@ ul.modules-list-icons {
 .columns div#schedule h2 {
     background-position: left center;
     background: url('../images/tech.png') no-repeat;
+}
+
+.columns div#longtext h2 {
+    background-position: left center;
+    background: url('../images/bulb.png') no-repeat;
+}
+
+#longtext p {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .columns div#links h2 {
