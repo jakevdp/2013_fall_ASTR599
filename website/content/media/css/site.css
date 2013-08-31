@@ -733,7 +733,7 @@ ul.modules-list-icons {
 
 .columns div#what h2 {
     background-position: left center;
-    background: url('../images/help.png') no-repeat;
+    background: url('../images/info.png') no-repeat;
 }
 
 .columns div#bulb h2 {
@@ -763,12 +763,12 @@ ul.modules-list-icons {
 
 .columns div#schedule h2 {
     background-position: left center;
-    background: url('../images/tech.png') no-repeat;
+    background: url('../images/calendar.png') no-repeat;
 }
 
 .columns div#longtext h2 {
     background-position: left center;
-    background: url('../images/bulb.png') no-repeat;
+    background: url('../images/help.png') no-repeat;
 }
 
 #longtext p {
