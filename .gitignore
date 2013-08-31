@@ -40,3 +40,4 @@ nosetests.xml
 # deploy
 website/deploy
 website/.hyde_deps
+website/content/media/notebooks

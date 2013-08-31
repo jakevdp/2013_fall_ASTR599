@@ -2,7 +2,11 @@
 
 all: clean gen
 
-gen:
+cp_notebooks:
+	mkdir -p content/media/notebooks
+	rsync ../notebooks/*.ipynb content/media/notebooks/
+
+gen: cp_notebooks
 	hyde gen
 
 serve: clean gen

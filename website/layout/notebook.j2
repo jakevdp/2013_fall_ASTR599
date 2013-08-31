@@ -1,0 +1,4 @@
+{% macro notebook_link(title, nb_path) -%}
+   <a href="{{ media_url("/notebooks/") }}{{ nb_path }}">{{ title }}</a>
+   <small>(<a href="http://nbviewer.ipython.org/url/{{ site_url }}{{ media_root }}/notebooks/{{ nb_path }}">nbviewer</a> | <a href="http://wakari.io/nb/url/{{ site_url }}{{ media_root }}/notebooks/{{ nb_path }}">wakari</a>)</small>
+{%- endmacro %}
