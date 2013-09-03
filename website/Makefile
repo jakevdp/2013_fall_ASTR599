@@ -19,3 +19,7 @@ clean: clean_notebooks
 	rm -rf deploy
 
 update: gen
+
+publish:
+	hyde gen -c production.yaml
+	rsync -e ssh -r deploy_production/ portal:/www/astro/users/vanderplas/html/Astr599/
