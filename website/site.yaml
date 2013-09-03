@@ -9,15 +9,15 @@ plugins:
     - hyde.ext.plugins.syntext.SyntextPlugin
     - hyde.ext.plugins.sorter.SorterPlugin
     - hyde.ext.plugins.textlinks.TextlinksPlugin
+    - hyde.ext.plugins.notebook.NotebookPlugin
     - hyde.ext.plugins.urls.UrlCleanerPlugin
 markdown:
     extensions:
         - def_list
-        - tables
-        - headerid
+        - tables        - headerid
 context:
     data:
-        site_url: jakevdp.github.io/Astr599
+        site_url: www.astro.washington.edu/users/vanderplas/Astr599
         menu:
             -
                 name: Home
@@ -43,9 +43,9 @@ context:
             -
                 name: Computer Setup
                 description: Setting up your computer
-                css_class: installations
+                css_class: setup
                 type: page
-                url: installations.html
+                url: setup.html
 
             -
                 name: Links/Downloads
@@ -61,6 +61,7 @@ meta:
     charset: utf-8
     viewport: "width=device-width, initial-scale=1.0, user-scalable=yes"
     compatibility: "IE=Edge,chrome=IE8"
+
 urlcleaner:
     index_file_names: [index.html]
     strip_extensions: [html]

@@ -3,8 +3,11 @@
 all: clean gen
 
 cp_notebooks:
-	mkdir -p content/media/notebooks
-	rsync ../notebooks/*.ipynb content/media/notebooks/
+	mkdir -p content/notebooks
+	rsync ../notebooks/*.ipynb content/notebooks/
+
+clean_notebooks:
+	rm content/notebooks/*.ipynb
 
 gen: cp_notebooks
 	hyde gen
@@ -12,7 +15,7 @@ gen: cp_notebooks
 serve: clean gen
 	hyde serve
 
-clean:
+clean: clean_notebooks
 	rm -rf deploy
 
 update: gen

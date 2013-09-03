@@ -766,6 +766,11 @@ ul.modules-list-icons {
     background: url('../images/calendar.png') no-repeat;
 }
 
+.columns div#schedule h3 {
+    font-size: medium;
+    margin-top: 20px;
+}
+
 .columns div#longtext h2 {
     background-position: left center;
     background: url('../images/help.png') no-repeat;
