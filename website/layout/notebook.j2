@@ -1,3 +1,3 @@
 {% macro notebook_link(title, nb_path) -%}
-   <a href="{{ base_url }}/{{ nb_path|replace("ipynb", "html") }}">{{ title }}</a> <small>(<a href="{{ base_url }}/{{ nb_path }}">raw</a> | <a href="http://nbviewer.ipython.org/url/{{ site_url }}/{{ nb_path }}">nbviewer</a> | <a href="http://wakari.io/nb/url/{{ site_url }}/{{ nb_path }}">wakari</a>)</small>
+   <a href="{{ content_url(nb_path|replace("ipynb", "html")) }}">{{ title }}</a> <small>(<a href="{{ content_url(nb_path) }}">raw</a> | <a href="http://nbviewer.ipython.org/url/{{ site_url }}/{{ nb_path }}">nbviewer</a> | <a href="http://wakari.io/nb/url/{{ site_url }}/{{ nb_path }}">wakari</a>)</small>
 {%- endmacro %}
