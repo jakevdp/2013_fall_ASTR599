@@ -42,3 +42,6 @@ nosetests.xml
 website/deploy
 website/.hyde_deps
 website/content/notebooks
+website/deploy_production
+notebooks/*.py
+notebooks/*.dat
