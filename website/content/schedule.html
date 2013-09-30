@@ -118,12 +118,23 @@ description: Astr 599 Schedule
 
   <div class="box column" id="schedule">
     <h2>Weekly Seminar (Location: PAB 356A)</h2>
-    <h3>Mon. Sept 30:
-      Class Introduction & Overview</h3>  
+    <h3>Mon. Sept 30: Class Overview; Efficient Numerical Computing</h3>  
     <ul>
-      <li>Bootcamp Summary</li>
-      <li>Syllabus & Expectations</li>
-      <li>AstroML: Python for Astronomy</li></ul>  
+      <li>Syllabus & Course Expectations</li>
+      <li> {{ notebook_link("Efficient Computing with Numpy", "notebooks/11_EfficientNumpy.ipynb") }}
+	<br>
+	We didn't get to this topic during the bootcamp, so we'll dive into it now.
+      <li><b>Homework: due Monday, October 7th</b><br>
+	The homework assignment is to complete Parts I and II of the Breakout listed in the above IPython notebook.  It will also give you practice working with Git and Github.  For help on this, I recommend either going back through the lecture material above, or reading through <a href="http://gitref.org/">http://gitref.org/</a>.
+	<ol>
+	  <li>Create a new notebook called <font face="courier">HW1.ipynb</font> and in it complete Part 1 and 2 of the breakout.  Use code cells for code, use heading and markdown cells for description, and make sure to execute the magic command <font face="courier">%pylab inline</font> to embed the resulting figures in the notebook.</li>
+	  <li>The assignment should be turned in by submitting a <i>pull request</i> to the github repository I've set up: <a href="https://github.com/jakevdp/ASTR599_homework">jakevdp/ASTR599_homework</a>.  First <a href="https://help.github.com/articles/fork-a-repo">Fork and clone</a> the repository (recall that forking is accomplished via the web interface on github.com).
+	  <li><a href="http://gitref.org/branching/">Create a new branch</a> on your clone, and in that branch create a new directory that is your github username.  Put your notebook in this directory, and use <font face="courier">git commit</font> to commit the result.</li>
+	  <li><a href="http://gitref.org/remotes/">Push the branch</a> to your fork (<font face="courier">git push origin branchname</font>). Be aware that this will make your notebook public: anyone with web access can see what you wrote if they know where to look!</li>
+	  <li>From Github, <a href="https://help.github.com/articles/using-pull-requests#before-you-begin">submit a pull request</a> to the original repository to turn-in your work.</li>
+	</ol>
+      </li>
+    </ul>  
 
     <h3>Mon, Oct 7:
       Principles of Object-oriented Programming</h3>
