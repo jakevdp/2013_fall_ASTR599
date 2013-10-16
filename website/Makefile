@@ -4,9 +4,9 @@ all: clean gen
 
 cp_notebooks:
 	mkdir -p content/notebooks
-	rsync -r ../notebooks/*.ipynb ../notebooks/images content/notebooks/
+	rsync -ar ../notebooks/*.ipynb ../notebooks/images content/notebooks/
 	mkdir -p content/notebooks/files/images # hack to make files/images work
-	rsync -r content/notebooks/images/* content/notebooks/files/images/
+	rsync -ar content/notebooks/images/* content/notebooks/files/images/
 
 clean_notebooks:
 	rm content/notebooks/*.ipynb
