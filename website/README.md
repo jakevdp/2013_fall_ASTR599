@@ -13,3 +13,9 @@ To preview the website, you can then type
 [~]$ make serve
 ```
 and point your browser to [http://localhost:8080](http://localhost:8080)
+
+To publish the website to the web (note: this requires Jake's ssh password),
+type
+```
+[~]$ make publish
+```
