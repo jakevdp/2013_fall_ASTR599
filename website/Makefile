@@ -7,6 +7,7 @@ cp_notebooks:
 	rsync -ar ../notebooks/*.ipynb ../notebooks/images ../notebooks/fig_code content/notebooks/
 	mkdir -p content/notebooks/files/images # hack to make files/images work
 	rsync -ar content/notebooks/images/* content/notebooks/files/images/
+	cp ../notebooks/nth_fib.html content/notebooks/nth_fib.html
 
 clean_notebooks:
 	rm content/notebooks/*.ipynb
